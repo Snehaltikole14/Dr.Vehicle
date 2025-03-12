@@ -1,79 +1,81 @@
-*{
-    height: 0;
-    width: 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.bgimg{
-    height: 98vh;
-    width: 98vw;
-}
-.img{
-    height: 23vh;
-    width: 15vw;
-    margin-left: 50px;
-    margin-top: 10px;
-}
-
-.header {
-     display: flex;
-     justify-content: space-between;
-     position: relative;
-     bottom: 600px;
- 
+/* Header and Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #0078A0;
+    color: white;
 }
 
-.pg{
-    margin-left: 140px;
-    margin-top: 50px;
-    color: black;
+.logo img {
+    height: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.pexels.com/videos/3055287/free-video-3055287.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+  
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 60px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background: #000;
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    position: relative;
-    left: 300px;
-     white-space: nowrap;
-}
-.pg:hover{
-    text-decoration: underline;
-    color: black;
+    border-radius: 15px;
+    transition: 0.3s;
 }
 
-.mechanic{
-    height: 80vh;
-    width: 40vw;
-    position: relative;
-    top: 100px;
-    left: 190px;
-
-}
-
-.line1{
-    position: relative;
-    right: 850px;
-    top: 240px;
-    white-space: nowrap;
-}
-
-.line2{
-    position: relative;
-    right: 910px;
-    top: 290px;
-    white-space: nowrap;
-}
-
-.btn{
-    height: 7vh;
-  background-color: red;
-  border: 1px solid red;
-    font-weight: bold;
-    min-width: 200px;
-    border-radius: 16px;
-    position: relative;
-    right: 800px;
-    top: 380px;
-    font-size: 18px;
-}
-
-.btn:hover{
-    background-color: green;
+.btn:hover {
+    background: #444;
 }
